@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+}
+:root {
+  --profile-light: #262631;
+  --profile-dark: #20202a;
+  --icons-color: #717177;
+  --icons-hover: #f7bb09;
+  --text-bold: #f7f6ff;
+  --text-light: #888890;
+  --main-dark: #24242e;
+  --main-light: #2b2b38;
+  --card-text: #30303c;
+  --body-color: #191923;
+}
