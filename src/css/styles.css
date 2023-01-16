@@ -96,6 +96,7 @@ main {
   line-height: 24px;
 }
 
+/* ### profile-button --- now this button is Display: none*/
 .card-profile .profile-button {
   position: absolute;
   left: calc(50% - 70px);
@@ -110,6 +111,7 @@ main {
   color: var(--body-color);
   font-size: var(--md);
   box-shadow: 5px 6px 19px rgb(0 0 0 / 16%);
+  display: none;
 }
 
 .card-profile .profile-button span {
@@ -138,7 +140,7 @@ main {
   align-items: center;
   text-align: center;
   border-radius: 1px;
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 0px 15px -3px #000000;
 }
 
 /* ### meta-data */
@@ -201,5 +203,72 @@ main {
   margin-bottom: 12px;
 }
 
+.card-profile .info-container .skills .skills-icons img:hover {
+  cursor: pointer;
+}
+
+/* ### cv */
+
+.card-profile .info-container .cv {
+  display: grid;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.card-profile .info-container .cv h1 {
+  color: var(--text-bold);
+  font-size: var(--md);
+  margin: 0;
+  font-weight: normal;
+}
+
+.card-profile .info-container .cv a {
+  margin-top: 12px;
+  height: 40px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: var(--md);
+  font-weight: bold;
+}
+
+.card-profile .info-container .cv span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/download.svg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-profile .info-container .cv a:hover {
+  color: var(--icons-hover);
+  cursor: pointer;
+}
+
+.card-profile .social-container {
+  background-color: var(--profile-light);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1px;
+  justify-content: space-evenly;
+}
+
+.card-profile .social-container img {
+  width: 28px;
+  height: 28px;
+  margin-top: 12px;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-bottom: 12px;
+}
+
+/* # media queries */
 @media (min-width: 768px) {
 }
