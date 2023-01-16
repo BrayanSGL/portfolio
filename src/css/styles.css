@@ -42,7 +42,7 @@ body {
 main {
   background-color: var(--main-light);
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 /* # card-profile */
@@ -205,6 +205,7 @@ main {
 
 .card-profile .info-container .skills .skills-icons img:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 /* ### cv */
@@ -225,8 +226,9 @@ main {
 }
 
 .card-profile .info-container .cv a {
+  height: 24px;
+  margin-bottom: 28px;
   margin-top: 12px;
-  height: 40px;
   color: var(--text-light);
   text-decoration: none;
   font-size: var(--md);
@@ -244,8 +246,11 @@ main {
 }
 
 .card-profile .info-container .cv a:hover {
-  color: var(--icons-hover);
   cursor: pointer;
+  transform: translateY(-2px);
+  /*efecto de subrayar */
+  border-bottom: #f7bb09 2px solid;
+
 }
 
 .card-profile .social-container {
@@ -268,6 +273,15 @@ main {
   background-size: cover; /* Resize the background image to cover the entire container */
   margin-bottom: 12px;
 }
+
+.card-profile .social-container img:hover {
+  cursor: pointer;
+  /*efecto de sobresalir*/
+  transform: scale(1.2);
+
+
+}
+
 
 /* # media queries */
 @media (min-width: 768px) {
