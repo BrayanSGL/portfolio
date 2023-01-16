@@ -16,4 +16,109 @@
   --main-light: #2b2b38;
   --card-text: #30303c;
   --body-color: #191923;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--md);
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  background-color: var(--main-light);
+  width: 100%;
+  height: 100vh;
+}
+
+.card-profile{
+  margin: 12px;
+  padding: 12px;
+}
+
+.profile-container{
+  background-color: var(--profile-light);
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1px;
+}
+
+.profile-container img{
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  justify-self: center;
+  margin: 12px;
+}
+
+.profile-container h1{
+  color: var(--text-bold);
+  font-size: var(--lg);
+  margin: 0;
+  padding: 0;
+}
+
+.profile-container h2{
+  color: var(--text-light);
+  font-size: var(--md);
+  margin: 4px;
+  padding: 0;
+}
+
+.profile-container p{
+  color: var(--text-light);
+  font-size: var(--md);
+  margin: 16px 0 32px 0;
+  padding: 0;
+  max-width: 300px;
+}
+
+.card-profile .profile-button{
+  position: absolute;
+  left: calc(50% - 70px);
+  top: 50%;
+  margin-top: 73px;
+  padding: 10px;
+  width: 140px;
+  height: 40px;
+  border-radius: 13px;
+  border: none;
+  background-color: var(--text-bold);
+  color: var(--body-color);
+  font-size: var(--md);
+  box-shadow: 5px 6px 19px rgb(0 0 0 / 16%)
+}
+.card-profile .profile-button span{
+  display: inline-block;
+  width: 14px;
+  height: 9px;
+  margin-left: 10px;
+  background-image: url("../assets/icons/arrow-down.svg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+.card-profile .profile-button:hover{
+  background-color: var(--icons-hover);
+  cursor: pointer;
+}
+
+@media (min-width: 768px){
+  
 }
