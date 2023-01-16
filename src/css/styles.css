@@ -18,7 +18,7 @@
   --body-color: #191923;
   --sm: 14px;
   --md: 16px;
-  --lg: 18px;
+  --lg: 22px;
 }
 
 * {
@@ -39,18 +39,22 @@ body {
   padding: 0;
 }
 
-main{
+main {
   background-color: var(--main-light);
   width: 100%;
   height: 100vh;
 }
 
-.card-profile{
+/* # card-profile */
+
+.card-profile {
   margin: 12px;
   padding: 12px;
 }
 
-.profile-container{
+/* ## profile-container */
+
+.card-profile .profile-container {
   background-color: var(--profile-light);
   display: grid;
   place-content: center;
@@ -58,9 +62,10 @@ main{
   align-items: center;
   text-align: center;
   border-radius: 1px;
+  box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.25);
 }
 
-.profile-container img{
+.card-profile .profile-container img {
   width: 175px;
   height: 175px;
   border-radius: 50%;
@@ -68,33 +73,34 @@ main{
   margin: 12px;
 }
 
-.profile-container h1{
+.card-profile .profile-container h1 {
   color: var(--text-bold);
   font-size: var(--lg);
   margin: 0;
   padding: 0;
 }
 
-.profile-container h2{
+.card-profile .profile-container h2 {
   color: var(--text-light);
   font-size: var(--md);
   margin: 4px;
   padding: 0;
 }
 
-.profile-container p{
+.card-profile .profile-container p {
   color: var(--text-light);
   font-size: var(--md);
-  margin: 16px 0 32px 0;
+  margin: 16px 0 40px 0;
   padding: 0;
   max-width: 300px;
+  line-height: 24px;
 }
 
-.card-profile .profile-button{
+.card-profile .profile-button {
   position: absolute;
   left: calc(50% - 70px);
   top: 50%;
-  margin-top: 73px;
+  margin-top: 90px;
   padding: 10px;
   width: 140px;
   height: 40px;
@@ -103,9 +109,10 @@ main{
   background-color: var(--text-bold);
   color: var(--body-color);
   font-size: var(--md);
-  box-shadow: 5px 6px 19px rgb(0 0 0 / 16%)
+  box-shadow: 5px 6px 19px rgb(0 0 0 / 16%);
 }
-.card-profile .profile-button span{
+
+.card-profile .profile-button span {
   display: inline-block;
   width: 14px;
   height: 9px;
@@ -114,11 +121,85 @@ main{
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
 }
-.card-profile .profile-button:hover{
+
+.card-profile .profile-button:hover {
   background-color: var(--icons-hover);
   cursor: pointer;
 }
 
-@media (min-width: 768px){
-  
+/* ## info-container */
+
+.card-profile .info-container {
+  background-color: var(--profile-dark);
+  display: grid;
+  grid-template-rows: auto auto auto;
+  place-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1px;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ### meta-data */
+
+.card-profile .info-container .meta-data {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.card-profile .info-container .meta-data p {
+  margin: 12px;
+}
+
+.card-profile .info-container .meta-data .clave {
+  justify-self: left;
+  text-align: left;
+  color: var(--text-bold);
+}
+
+.card-profile .info-container .meta-data .value {
+  justify-self: right;
+  text-align: right;
+}
+
+/* ### skills */
+
+.card-profile .info-container .skills {
+  display: grid;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+.card-profile .info-container .skills h1 {
+  color: var(--text-bold);
+  font-size: var(--md);
+  margin: 0;
+  font-weight: normal;
+}
+
+.card-profile .info-container .skills .skills-icons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 12px;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card-profile .info-container .skills .skills-icons img {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
 }
