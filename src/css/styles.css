@@ -48,9 +48,9 @@ nav {
   /* border-bottom: 1px solid var(--profile-light); */
 }
 
-nav .burguer-button-container {
-  /* background-color: var(--main-light); */
-}
+/* nav .burguer-button-container {
+  /* background-color: var(--main-light); 
+} */
 
 nav .burguer-button-container:hover {
   background-color: var(--icons-hover);
