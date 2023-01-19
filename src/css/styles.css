@@ -176,7 +176,7 @@ main {
   position: absolute;
   left: calc(50% - 70px);
   top: 50%;
-  margin-top: 90px;
+  margin-top: 134px;
   padding: 10px;
   width: 140px;
   height: 40px;
@@ -186,7 +186,7 @@ main {
   color: var(--body-color);
   font-size: var(--md);
   box-shadow: 5px 6px 19px rgb(0 0 0 / 16%);
-  display: none;
+  /* display: none; */
 }
 
 .card-profile .profile-button span {
@@ -466,13 +466,25 @@ main {
   height: 1em;
   background-color: var(--text-light);
   border-radius: 50%;
-  margin: 0.5em;
+  margin: 12px 12px 20px 12px;
   display: inline-block;
   cursor: pointer;
 }
 
 .last-projects-container .carrusel .puntos .punto.active {
   background-color: var(--icons-hover);
+}
+
+footer a {
+  color: var(--icons-hover);
+  font-size: var(--md);
+  margin: 0;
+  font-weight: initial;
+  margin-top: 8px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+
 }
 
 /* # media queries */
