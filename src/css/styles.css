@@ -216,6 +216,7 @@ main {
   text-align: center;
   border-radius: 1px;
   box-shadow: inset 0px 0px 15px -3px #000000;
+  padding-bottom: 24px;
 }
 
 /* ### meta-data */
@@ -298,16 +299,17 @@ main {
   font-size: var(--md);
   margin: 0;
   font-weight: normal;
+  margin: 12px 0;
 }
 
 .card-profile .info-container .cv a {
   height: 24px;
-  margin-bottom: 28px;
-  margin-top: 12px;
   color: var(--text-light);
   text-decoration: none;
   font-size: var(--md);
   font-weight: bold;
+  margin: 0 24px;
+  border-radius: 4px;
 }
 
 .card-profile .info-container .cv span {
@@ -323,8 +325,7 @@ main {
 .card-profile .info-container .cv a:hover {
   cursor: pointer;
   transform: translateY(-2px);
-  /*efecto de subrayar */
-  border-bottom: #f7bb09 2px solid;
+  color: #f7bb09;
 }
 
 .card-profile .social-container {
@@ -382,6 +383,7 @@ main {
   padding: 16px;
   border-radius: 4px;
   box-shadow: 0px 1px 19px -2px rgba(0, 0, 0, 0.75);
+  line-height: 24px;
 }
 
 .main-container p span {
@@ -392,7 +394,7 @@ main {
 }
 
 .last-projects-container .carrusel {
-  margin: 24px;
+  margin: auto;
   max-width: 120em;
 }
 
@@ -411,18 +413,51 @@ main {
   justify-items: center;
   align-items: center;
   text-align: center;
-  margin: 24px;
+  margin: 0 24px;
+  background-color: var(--card-text);
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 19px -2px rgba(0, 0, 0, 0.75);
+}
+
+.last-projects-container .carrusel .projects .project:hover {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0px 1px 19px -2px rgba(177, 143, 33, 0.75);
+}
+
+.last-projects-container .carrusel .projects .project h2 {
+  color: var(--text-bold);
+  font-size: var(--md);
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.last-projects-container .carrusel .projects .project img {
+  width: 90%;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-position: center;
+  border-radius: 4px;
+  box-shadow: 0px 1px 19px -2px rgba(0, 0, 0, 0.75);
+}
+
+.last-projects-container .carrusel .projects .project p {
+  color: var(--text-light);
+  font-size: var(--md);
+  margin: 0;
+  font-weight: normal;
+  margin-top: 8px;
+  line-height: 24px;
 }
 
 .last-projects-container .carrusel .puntos {
   width: 100%;
-  background-color: var(--icons-hover);
-  padding: 1em;
+  padding: 0 12px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  
 }
 
 .last-projects-container .carrusel .puntos .punto {
@@ -432,6 +467,7 @@ main {
   border-radius: 50%;
   margin: 0.5em;
   display: inline-block;
+  cursor: pointer;
 }
 
 /* # media queries */
