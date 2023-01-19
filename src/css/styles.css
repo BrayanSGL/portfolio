@@ -396,6 +396,7 @@ main {
 .last-projects-container .carrusel {
   margin: auto;
   max-width: 120em;
+  overflow-x: hidden;
 }
 
 .last-projects-container .carrusel .projects {
@@ -468,6 +469,10 @@ main {
   margin: 0.5em;
   display: inline-block;
   cursor: pointer;
+}
+
+.last-projects-container .carrusel .puntos .punto.active {
+  background-color: var(--icons-hover);
 }
 
 /* # media queries */
