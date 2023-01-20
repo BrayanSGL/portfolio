@@ -489,4 +489,30 @@ footer a {
 
 /* # media queries */
 @media (min-width: 768px) {
+
+  body{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-right: 12px;
+    padding-bottom: 12px;
+  }
+  /* indicar que el nav va en la segunda columna */
+  nav{
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 12px;
+    margin-top: 12px;
+    height: 97.35%;
+
+  }
+  main{
+    margin: 12px 12px 12px 12px;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  
+
+  
+
 }
