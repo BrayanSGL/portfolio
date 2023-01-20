@@ -5,6 +5,7 @@
   font-weight: 100 900;
   font-style: normal;
 }
+
 :root {
   --profile-light: #262631;
   --profile-dark: #20202a;
@@ -63,12 +64,11 @@ nav .burguer-button {
   cursor: pointer;
 }
 
-nav .menu-options {
+nav .menu-options.active {
   position: absolute;
   top: 52px;
   right: 0;
   background-color: var(--profile-dark);
-  display: none; /* Display: none */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -76,6 +76,11 @@ nav .menu-options {
   height: 100vh;
   z-index: 1;
   flex: 1 1 100%;
+  display: flex;
+}
+
+nav .menu-options {
+  display: none;
 }
 
 nav .menu-options ul {
@@ -89,6 +94,7 @@ nav .menu-options ul {
   /* Separar los elementos */
   margin: 0;
   padding: 0;
+  border-top: #888890 solid 1px;
 }
 
 nav .menu-options ul li {
@@ -189,15 +195,6 @@ main {
   /* display: none; */
 }
 
-.card-profile .profile-button span {
-  display: inline-block;
-  width: 14px;
-  height: 9px;
-  margin-left: 10px;
-  background-image: url("../assets/icons/arrow-down.svg");
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-}
 
 .card-profile .profile-button:hover {
   background-color: var(--icons-hover);
@@ -206,7 +203,7 @@ main {
 
 /* ## info-container */
 
-.card-profile .info-container {
+.card-profile .info-container.active {
   background-color: var(--profile-dark);
   display: grid;
   grid-template-rows: auto auto auto;
@@ -217,6 +214,10 @@ main {
   border-radius: 1px;
   box-shadow: inset 0px 0px 15px -3px #000000;
   padding-bottom: 24px;
+}
+
+.card-profile .info-container{
+  display: none;
 }
 
 /* ### meta-data */
@@ -328,7 +329,7 @@ main {
   color: #f7bb09;
 }
 
-.card-profile .social-container {
+.card-profile .social-container.active {
   background-color: var(--profile-light);
   display: grid;
   grid-template-columns: auto auto auto;
@@ -338,6 +339,10 @@ main {
   text-align: center;
   border-radius: 1px;
   justify-content: space-evenly;
+}
+
+.card-profile .social-container{
+  display: none;
 }
 
 .card-profile .social-container img {
@@ -369,8 +374,8 @@ main {
   color: var(--text-bold);
   font-size: var(--lg);
   margin: 24px;
-  margin-bottom: 24px;
   font-weight: bolder;
+  margin-bottom: 0px;
 }
 
 .presentation-letter-container p {
@@ -419,6 +424,7 @@ main {
   padding: 8px;
   border-radius: 4px;
   box-shadow: 0px 1px 19px -2px rgba(0, 0, 0, 0.75);
+  margin-top: 24px;
 }
 
 .last-projects-container .carrusel .projects .project:hover {
@@ -484,35 +490,27 @@ footer a {
   line-height: 40px;
   text-align: center;
   text-decoration: none;
-
 }
 
 /* # media queries */
 @media (min-width: 768px) {
-
-  body{
+  body {
     display: grid;
     grid-template-columns: auto auto;
     padding-right: 12px;
     padding-bottom: 12px;
   }
   /* indicar que el nav va en la segunda columna */
-  nav{
+  nav {
     grid-column: 2;
     grid-row: 1;
     margin-left: 12px;
     margin-top: 12px;
     height: 97.35%;
-
   }
-  main{
+  main {
     margin: 12px 12px 12px 12px;
     display: grid;
     grid-template-columns: auto auto;
   }
-
-  
-
-  
-
 }
