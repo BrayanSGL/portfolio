@@ -28,6 +28,21 @@ buttonMore.addEventListener("click", () => {
   }
 });
 
+// resize
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 768) {
+    infoContainer.classList.add("active");
+    socialContainer.classList.add("active");
+    buttonMore.classList.remove("active");
+    buttonMore.innerHTML = "Ver más";
+  } else {
+    infoContainer.classList.remove("active");
+    socialContainer.classList.remove("active");
+  }
+});
+
+
+
 // carrusel
 punto.forEach((onePunto, i) => {
   punto[i].addEventListener("click", () => {

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - BrayanSGL</title>
     <link rel="icon" href="../assets/icons/favicon.svg" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <script src="../js/main.js" defer></script> <!-- defer: carga el script al final de la carga de la pagina -->
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <script src="./src/js/main.js" defer></script> <!-- defer: carga el script al final de la carga de la pagina -->
   </head>
   <body>
     <nav>
       <a class="burguer-button-container">
         <div class="burguer-button">
-          <img src="../assets/icons/menu-button.svg" alt="menu" />
+          <img src="./src/assets/icons/menu-button.svg" alt="menu" />
         </div>
       </a>
       <div class="menu-options">
@@ -36,14 +36,14 @@
     <main>
       <section class="card-profile">
         <div class="profile-container">
-          <img src="../assets/images/profile.jpg" alt="profile-photo" />
+          <img src="./src/assets/images/profile.jpg" alt="profile-photo" />
           <h1>Brayan S. Galeano Lara</h1>
           <h2>@brayansgl</h2>
           <p>Desarrollador y estudiante de ingeniería en Telecomunicaciones</p>
         </div>
-        <button id="more" class="profile-button">Ver mas</button>
+        <button id="more" class="profile-button">Ver más</button>
         <!-- <a id="more" class="profile-button">Ver mas<span></span></a> -->
-        <div class="info-container">
+        <div class="info-container active">
           <div class="meta-data">
             <div class="clave">
               <p>Pais</p>
@@ -59,35 +59,35 @@
           <div class="skills">
             <h1>Habilidades</h1>
             <div class="skills-icons">
-              <img src="../assets/icons/html.svg" alt="html-icon" />
-              <img src="../assets/icons/css.svg" alt="css-icon" />
-              <img src="../assets/icons/js.svg" alt="javascript-icon" />
-              <img src="../assets/icons/nodejs.svg" alt="nodejs-icon" />
-              <img src="../assets/icons/react.svg" alt="react-icon" />
-              <img src="../assets/icons/python.svg" alt="python-icon" />
-              <img src="../assets/icons/git.svg" alt="git-icon" />
-              <img src="../assets/icons/mysql.svg" alt="mysql-icon" />
+              <img src="./src/assets/icons/html.svg" alt="html-icon" />
+              <img src="./src/assets/icons/css.svg" alt="css-icon" />
+              <img src="./src/assets/icons/js.svg" alt="javascript-icon" />
+              <img src="./src/assets/icons/nodejs.svg" alt="nodejs-icon" />
+              <img src="./src/assets/icons/react.svg" alt="react-icon" />
+              <img src="./src/assets/icons/python.svg" alt="python-icon" />
+              <img src="./src/assets/icons/git.svg" alt="git-icon" />
+              <img src="./src/assets/icons/mysql.svg" alt="mysql-icon" />
             </div>
           </div>
           <div class="cv">
             <h1>CV</h1>
             <a
               target="_blank"
-              href="../assets/pdf/PDF_TEXT.pdf"
+              href="./src/assets/pdf/PDF_TEXT.pdf"
               download="BrayanSGL_CV.pdf"
               >Descargar <span></span
             ></a>
           </div>
         </div>
-        <div class="social-container">
+        <div class="social-container active">
           <a href="mailto:bgaleanolara@outlook.com" target="_blank">
-            <img src="../assets/icons/gmail.svg" alt="gmail-icon" />
+            <img src="./src/assets/icons/gmail.svg" alt="gmail-icon" />
           </a>
           <a href="https://github.com/BrayanSGL" target="_blank">
-            <img src="../assets/icons/github.svg" alt="github-icon" />
+            <img src="./src/assets/icons/github.svg" alt="github-icon" />
           </a>
           <a href="https://twitter.com/BrayanSGL" target="_blank">
-            <img src="../assets/icons/twitter.svg" alt="twitter-icon" />
+            <img src="./src/assets/icons/twitter.svg" alt="twitter-icon" />
           </a>
         </div>
       </section>
@@ -107,7 +107,7 @@
             <div class="projects">
               <article class="project">
                 <h2>Juego multijugador</h2>
-                <img src="../assets/images/maze.png" alt="first-project" />
+                <img src="./src/assets/images/maze.png" alt="first-project" />
                 <p>
                   Aplicación básica de un modelo cliente servidor con sockets
                   TCP. El video juego es un laberinto multijugador.
@@ -115,7 +115,7 @@
               </article>
               <article class="project">
                 <h2>Batatabit</h2>
-                <img src="../assets/images/batatabit.png" alt="second-project" />
+                <img src="./src/assets/images/batatabit.png" alt="second-project" />
                 <p>
                   Batatabit es una plataforma de monitoreo de criptomonedas que
                   te ayuda a conocer los precios y tendencias en tiempo real.
@@ -125,7 +125,7 @@
                 <h2>
                   Transferencia de imágenes
                 </h2>
-                <img src="../assets/images/server.jpg" alt="third-project" />
+                <img src="./src/assets/images/server.jpg" alt="third-project" />
                 <p>
                   Modelo cliente - servidor que permite realizar la
                   transferencia de imágenes entre ambos por medio de sockets

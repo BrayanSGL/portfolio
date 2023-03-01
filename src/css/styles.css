@@ -170,7 +170,6 @@ main {
 
 .card-profile .profile-container p {
   color: var(--text-light);
-  font-size: var(--md);
   margin: 16px 0 40px 0;
   padding: 0;
   max-width: 300px;
@@ -513,4 +512,27 @@ footer a {
     display: grid;
     grid-template-columns: auto auto;
   }
+
+  .card-profile {
+    padding-top: 12px;
+    padding-left: 0px;
+  }
+  .card-profile .profile-container img{
+    width: 117px;
+    height: 117px;
+  }
+
+  .card-profile .profile-container h1 {
+    font-size: var(--mg);
+  }
+  .card-profile .profile-container h2,p {
+    font-size: var(--sm);
+  }
+
+  .card-profile .profile-button {
+    display: none;
+  }
+
+
+
 }
