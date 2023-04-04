@@ -49,12 +49,16 @@ nav {
   /* border-bottom: 1px solid var(--profile-light); */
 }
 
-/* nav .burguer-button-container {
-  /* background-color: var(--main-light); 
-} */
-
-nav .burguer-button-container:hover {
-  background-color: var(--icons-hover);
+nav .burguer-button-container {
+  /* background-color: var(--main-light);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  cursor: pointer;
+  /*sombra*/
+  box-shadow: -26px 0px 19px 0px rgba(0, 0, 0, 0.1);
 }
 
 nav .burguer-button {
@@ -62,6 +66,18 @@ nav .burguer-button {
   height: 24px;
   margin: 12px;
   cursor: pointer;
+}
+
+nav .burguer-button ion-icon {
+  /*Agrandar y centrar*/
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .burguer-button-container:hover {
+  background-color: var(--icons-hover);
 }
 
 nav .menu-options.active {
@@ -177,8 +193,23 @@ main {
 }
 
 /* ### profile-button --- now this button is Display: none*/
+
 .card-profile .profile-button {
+  background-color: var(--text-bold);
+  cursor: pointer;
+  border: none;
+  padding: 12px 32px;
+  color: var(--body-color);
+  font-size: var(--md);
+  border-radius: 12px;
   position: absolute;
+  left: calc(50% - 70px);
+  top: 50%;
+  margin-top: 134px;
+  padding: 10px;
+  width: 140px;
+
+  /* position: absolute;
   left: calc(50% - 70px);
   top: 50%;
   margin-top: 134px;
@@ -190,7 +221,7 @@ main {
   background-color: var(--text-bold);
   color: var(--body-color);
   font-size: var(--md);
-  box-shadow: 5px 6px 19px rgb(0 0 0 / 16%);
+  box-shadow: 5px 6px 19px rgb(0 0 0 / 16%); */
   /* display: none; */
 }
 
@@ -215,7 +246,7 @@ main {
   padding-bottom: 24px;
 }
 
-.card-profile .info-container{
+.card-profile .info-container {
   display: none;
 }
 
@@ -270,7 +301,7 @@ main {
   justify-content: space-around;
 }
 
-.card-profile .info-container .skills .skills-icons img {
+.card-profile .info-container .skills .skills-icons ion-icon {
   width: 40px;
   height: 40px;
   margin: 4px;
@@ -279,9 +310,10 @@ main {
   margin-bottom: 12px;
 }
 
-.card-profile .info-container .skills .skills-icons img:hover {
+.card-profile .info-container .skills .skills-icons ion-icon:hover {
   cursor: pointer;
   transform: scale(1.2);
+  color: var(--icons-hover);
 }
 
 /* ### cv */
@@ -312,14 +344,11 @@ main {
   border-radius: 4px;
 }
 
-.card-profile .info-container .cv span {
+.card-profile .info-container .cv ion-icon {
   display: inline-block;
-  width: 14px;
-  height: 14px;
-  margin-left: 10px;
-  background-image: url("../assets/icons/download.svg");
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  width: 18px;
+  height: 18px;
+  margin-left: 8px;
 }
 
 .card-profile .info-container .cv a:hover {
@@ -340,23 +369,25 @@ main {
   justify-content: space-evenly;
 }
 
-.card-profile .social-container{
+.card-profile .social-container {
   display: none;
 }
 
-.card-profile .social-container img {
+.card-profile .social-container ion-icon {
   width: 28px;
   height: 28px;
   margin-top: 12px;
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   margin-bottom: 12px;
+  color: var(--icons-color);
 }
 
-.card-profile .social-container img:hover {
+.card-profile .social-container ion-icon:hover {
   cursor: pointer;
   /*efecto de sobresalir*/
   transform: scale(1.2);
+  color: var(--icons-hover);
 }
 
 /* #Main container */
@@ -517,7 +548,7 @@ footer a {
     padding-top: 12px;
     padding-left: 0px;
   }
-  .card-profile .profile-container img{
+  .card-profile .profile-container img {
     width: 117px;
     height: 117px;
   }
@@ -525,14 +556,12 @@ footer a {
   .card-profile .profile-container h1 {
     font-size: var(--mg);
   }
-  .card-profile .profile-container h2,p {
+  .card-profile .profile-container h2,
+  p {
     font-size: var(--sm);
   }
 
   .card-profile .profile-button {
     display: none;
   }
-
-
-
 }

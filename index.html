@@ -7,28 +7,29 @@
     <title>Portfolio - BrayanSGL</title>
     <link rel="icon" href="./src/assets/icons/favicon.svg" />
     <link rel="stylesheet" href="./src/css/styles.css" />
-    <script src="./src/js/main.js" defer></script> <!-- defer: carga el script al final de la carga de la pagina -->
+    <script src="./src/js/main.js" defer></script>
+    <!-- defer: carga el script al final de la carga de la pagina -->
   </head>
   <body>
     <nav>
       <a class="burguer-button-container">
         <div class="burguer-button">
-          <img src="./src/assets/icons/menu-button.svg" alt="menu" />
+          <ion-icon name="menu-outline"></ion-icon>
         </div>
       </a>
       <div class="menu-options">
         <ul>
           <li>
-            <a href=""><span></span>Inicio</a>
+            <a href=""><ion-icon name="home-outline"></ion-icon>Inicio</a>
           </li>
           <li>
-            <a href=""><span></span>Proyectos</a>
+            <a href=""><ion-icon name="code-outline"></ion-icon>Proyectos</a>
           </li>
           <li>
-            <a href=""><span></span>Certificaciones</a>
+            <a href=""><ion-icon name="sparkles-outline"></ion-icon>Certificaciones</a>
           </li>
           <li>
-            <a href=""><span></span>Contacto</a>
+            <a href=""><ion-icon name="call-outline"></ion-icon>Contacto</a>
           </li>
         </ul>
       </div>
@@ -59,14 +60,14 @@
           <div class="skills">
             <h1>Habilidades</h1>
             <div class="skills-icons">
-              <img src="./src/assets/icons/html.svg" alt="html-icon" />
-              <img src="./src/assets/icons/css.svg" alt="css-icon" />
-              <img src="./src/assets/icons/js.svg" alt="javascript-icon" />
-              <img src="./src/assets/icons/nodejs.svg" alt="nodejs-icon" />
-              <img src="./src/assets/icons/react.svg" alt="react-icon" />
-              <img src="./src/assets/icons/python.svg" alt="python-icon" />
-              <img src="./src/assets/icons/git.svg" alt="git-icon" />
-              <img src="./src/assets/icons/mysql.svg" alt="mysql-icon" />
+              <ion-icon name="logo-html5"></ion-icon>
+              <ion-icon name="logo-css3"></ion-icon>
+              <ion-icon name="logo-javascript"></ion-icon>
+              <ion-icon name="logo-nodejs"></ion-icon>
+              <ion-icon name="logo-react"></ion-icon>
+              <ion-icon name="logo-python"></ion-icon>
+              <ion-icon name="git-branch"></ion-icon>
+              <ion-icon name="logo-tux"></ion-icon>
             </div>
           </div>
           <div class="cv">
@@ -75,22 +76,21 @@
               target="_blank"
               href="./src/assets/pdf/PDF_TEXT.pdf"
               download="BrayanSGL_CV.pdf"
-              >Descargar <span></span
-            ></a>
+              >Descargar <ion-icon name="download-outline"></ion-icon></a>
           </div>
         </div>
         <div class="social-container active">
           <a href="mailto:bgaleanolara@outlook.com" target="_blank">
-            <img src="./src/assets/icons/gmail.svg" alt="gmail-icon" />
+            <ion-icon name="mail"></ion-icon>
           </a>
           <a href="https://github.com/BrayanSGL" target="_blank">
-            <img src="./src/assets/icons/github.svg" alt="github-icon" />
+            <ion-icon name="logo-github"></ion-icon>
           </a>
           <a href="https://twitter.com/BrayanSGL" target="_blank">
-            <img src="./src/assets/icons/twitter.svg" alt="twitter-icon" />
+            <ion-icon name="logo-twitter"></ion-icon>
           </a>
         </div>
-      </section>
+      </section> 
       <section class="main-container">
         <section class="presentation-letter-container">
           <h1>Conoce al creador: La cara detras del trabajo</h1>
@@ -115,16 +115,17 @@
               </article>
               <article class="project">
                 <h2>Batatabit</h2>
-                <img src="./src/assets/images/batatabit.png" alt="second-project" />
+                <img
+                  src="./src/assets/images/batatabit.png"
+                  alt="second-project"
+                />
                 <p>
                   Batatabit es una plataforma de monitoreo de criptomonedas que
                   te ayuda a conocer los precios y tendencias en tiempo real.
                 </p>
               </article>
               <article class="project">
-                <h2>
-                  Transferencia de imágenes
-                </h2>
+                <h2>Transferencia de imágenes</h2>
                 <img src="./src/assets/images/server.jpg" alt="third-project" />
                 <p>
                   Modelo cliente - servidor que permite realizar la
@@ -142,5 +143,10 @@
         </section>
       </section>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+   
   </body>
 </html>
